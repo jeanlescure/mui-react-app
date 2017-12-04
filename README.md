@@ -38,6 +38,32 @@ The `Nav` component (`src/components/nav/`):
 - Tracks the currently selected page using theme colors and the `withStyles` higher-order component
 - Allows to switch shades
 
+## Development
+
+To install dependencies run:
+
+```
+$ yarn install
+```
+
+To start webpack dev server with hot reload run:
+
+```
+$ yarn dev
+```
+
+## Production build
+
+To build `dist/` directory run:
+
+```
+$ yarn build
+```
+
+## What about linting/tests/etc?
+
+This is a base app. The implementation of Material UI here-in is already opinionated enough. I'd rather leave options open for you to implement whatever flavor of linting, tests, etc that your heart desires ;)
+
 ## Important theming concepts
 
 In it's latest iteration, Material UI has implemented the following hierarchy:
@@ -53,10 +79,6 @@ In it's latest iteration, Material UI has implemented the following hierarchy:
 More info on theme customization can be found on [Material UI's docs](https://material-ui-next.com/customization/themes/).
 
 Besides themes, Material UI provides even further styling capabilities thru its usage of [JSS](https://material-ui-next.com/customization/css-in-js/). This is a Javascript implementation of CSS which this app has implemented as global styles under the file: `src/themes/[THEME-NAME]/styles.js`.
-
-## What about linting/tests/etc?
-
-This is a base app. The implementation of Material UI here-in is already opinionated enough. I'd rather leave options open for you to implement whatever flavor of linting, tests, etc that your heart desires ;)
 
 ## Further dev notes
 
