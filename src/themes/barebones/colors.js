@@ -1,0 +1,12 @@
+export const blue = '#2fa3db';
+export const green = '#2eaf6f';
+export const orange = '#f79620';
+export const red = '#e61a63';
+export const teal = '#00b5c0';
+export const purple = '#933f8f';
+export const lightGrey = '#aaabab';
+export const grey = '#455a64';
+export const darkGrey = '#323232';
+export const black = '#060809';
+export const white = '#ffffff';
+export const transparent = 'rgba(0, 0, 0, 0)';

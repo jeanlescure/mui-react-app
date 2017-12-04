@@ -1,0 +1,1 @@
+export barebones from './barebones';
