@@ -14,7 +14,7 @@ export default shade => ({
       fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
     },
     'h1, h2, h3, h4, h5, h6, p': {
-      color: `${palette.shades[shade].text.primary} !important`,
+      color: `${palette.shades[shade].text.primary}`,
     },
     a: {
       color: palette.common.teal,
