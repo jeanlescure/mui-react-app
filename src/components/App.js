@@ -26,7 +26,9 @@ class App extends Component {
   }
 
   initTheme = (name: string, shade: string) => {
-    const theme = Object.assign({}, Themes[name], {type: shade});
+    const theme = Themes[name];
+    theme.palette = Object.assign({}, Themes[name].palette, {type: shade});
+
     this.props.themeSet(name, shade, theme);
   };
 

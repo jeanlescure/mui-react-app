@@ -38,7 +38,9 @@ class Nav extends Component {
   shadeToggle = () => {
     const name = this.props.themeState.name;
     const shade = (this.props.themeState.shade === 'dark')? 'light' : 'dark';
-    const theme = Object.assign({}, Themes[name], {type: shade});
+
+    const theme = Themes[name];
+    theme.palette = Object.assign({}, Themes[name].palette, {type: shade});
 
     this.props.themeSet(name, shade, theme);
   };
