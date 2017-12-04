@@ -1,4 +1,7 @@
 # Material UI boilerplate React app
+
+<img alt="barebones theme demo gif" src="https://github.com/jeanlescure/mui-react-app/raw/master/src/themes/assets/demo.gif" width="580"/>
+
 ## mui-react-app template
 
 This is yet another React starter app, with an added bonus of having Material UI's theming capabilities implemented out of the box.
