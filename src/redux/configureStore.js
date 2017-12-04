@@ -17,12 +17,15 @@ const configureStore = function configureStore(config, reducers) {
   // Thunk Middleware
   middleware.push(thunk);
 
-  // Logging Middleware
-  const logger = createLogger({
-    level: 'info',
-    collapsed: true,
-  });
-  middleware.push(logger);
+  // Turned off for prod
+  if (process.env.NODE_ENV !== 'production') {
+    // Logging Middleware
+    const logger = createLogger({
+      level: 'info',
+      collapsed: true,
+    });
+    middleware.push(logger);
+  }
 
   const composeEnhancers = compose;
 
